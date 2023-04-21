@@ -22,3 +22,18 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* ----------  task-03  ---------- */
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.gallery-img {
+width: 1400px;
+box-shadow: 14px 14px 36px 1px rgba(0,27,5,0.8);
+-webkit-box-shadow: 14px 14px 36px 1px rgba(0,27,5,0.8);
+-moz-box-shadow: 14px 14px 36px 1px rgba(0,27,5,0.8);
+}
