@@ -19,10 +19,10 @@ formLogin.addEventListener('submit', event => {
     event.preventDefault();
 
     if (formLogin.elements.email.value === '' || formLogin.elements.password.value === '') {
-        alert('Please fill in all fields!');
+        return alert('Please fill in all fields!');
     }
     else {
-        
+
         loginDate.email = formLogin.elements.email.value;
         loginDate.password = formLogin.elements.password.value;
     }

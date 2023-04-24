@@ -9,9 +9,11 @@ console.log(`Number of categories: ${categoriesAll.length}`);
 //в категорії(усіх < li >, вкладених в нього).
 
 categoriesAll.forEach(element => {
-    const listLength = element.querySelectorAll('li').length;
+    const list = element.lastElementChild;
+    const listElements = list.children;
+
     const titleText = element.firstElementChild.textContent;
 
     console.log(`Category: ${titleText}`);
-    console.log(`Elements: ${listLength}`)
+    console.log(`Elements: ${listElements.length}`);
 })

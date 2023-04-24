@@ -15,6 +15,7 @@ const ingredients = [
 //  ul#ingredients.
 
 const listIngredients = document.querySelector('#ingredients');
+const itemArray = [];
 
 ingredients.forEach(ingredient => {
 
@@ -22,6 +23,7 @@ ingredients.forEach(ingredient => {
   itemIngredients.classList.add('item');
   itemIngredients.textContent = `${ingredient}`;
 
-  listIngredients.append(itemIngredients);
+  itemArray.push(itemIngredients);
 });
 
+listIngredients.append(...itemArray);
